@@ -12,7 +12,7 @@ model Tarefa {
   title       String
   description String
   date        DateTime
-  Duration    BigInt
+  duration    BigInt
 
-  @@map("tarefa")
+  @@map("task")
 }
