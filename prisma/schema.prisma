@@ -7,12 +7,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Tarefa {
-  id          String   @id @default(uuid())
+model Task {
+  id          String @id @default(uuid())
   title       String
   description String
-  date        DateTime
-  duration    Int
+  date        String
+  duracao     String
 
   @@map("task")
 }
