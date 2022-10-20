@@ -1,0 +1,3 @@
+class CreateTaskUseCase {}
+
+export { CreateTaskUseCase };
