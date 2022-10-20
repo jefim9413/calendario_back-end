@@ -8,7 +8,7 @@ interface ICreateTesk {
 
 class CreateTaskUseCase {
   async execute({ title, description, date, duracao }: ICreateTesk) {
-    const task = await prisma.tarefa.create({
+    const task = await prisma.task.create({
       data: {
         title,
         description,
