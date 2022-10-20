@@ -11,7 +11,7 @@ model Tarefa {
   id          String   @id @default(uuid())
   titulo      String
   description String
-  data        DateTime @default(now())
+  data        DateTime
 
   @@map("tarefa")
 }
