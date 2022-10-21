@@ -1,0 +1,3 @@
+class UpdateTaskController {}
+
+export { UpdateTaskController };
