@@ -4,8 +4,8 @@ interface IUpdateTask {
   id: string;
   title: string;
   description: string;
-  date: string;
-  duracao: string;
+  date: Date;
+  duracao: number;
 }
 
 class UpdateTaskUseCase {
