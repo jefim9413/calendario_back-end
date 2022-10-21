@@ -1,0 +1,3 @@
+class UpdateTaskUseCase {}
+
+export { UpdateTaskUseCase };
