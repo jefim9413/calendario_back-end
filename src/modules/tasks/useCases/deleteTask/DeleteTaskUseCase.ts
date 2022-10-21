@@ -1,0 +1,3 @@
+class DeleteTaskUseCase {}
+
+export { DeleteTaskUseCase };
