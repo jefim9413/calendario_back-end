@@ -11,6 +11,9 @@ class DeleteTaskUseCase {
     if (!task) {
       throw new Error("Task not found");
     }
+    await prisma.task.delete({ where: { id } });
+
+    return task;
   }
 }
 
