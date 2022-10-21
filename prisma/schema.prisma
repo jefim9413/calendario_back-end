@@ -8,11 +8,11 @@ datasource db {
 }
 
 model Task {
-  id          String @id @default(uuid())
+  id          String   @id @default(uuid())
   title       String
   description String
-  date        String
-  duracao     String
+  date        DateTime
+  duracao     Int
 
   @@map("task")
 }
