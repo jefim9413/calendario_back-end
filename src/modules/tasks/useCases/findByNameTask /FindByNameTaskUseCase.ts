@@ -10,6 +10,9 @@ class FindByNameTaskUseCase {
         },
       },
     });
+    if (!result) {
+      throw new Error("There is no task with that title");
+    }
 
     return result;
   }
