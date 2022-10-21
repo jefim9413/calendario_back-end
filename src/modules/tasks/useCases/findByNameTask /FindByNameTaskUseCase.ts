@@ -1,0 +1,3 @@
+class FindByNameTaskUseCase {}
+
+export { FindByNameTaskUseCase };
