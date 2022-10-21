@@ -10,7 +10,17 @@ interface IUpdateTask {
 
 class UpdateTaskUseCase {
   async execute({ id, date, description, duracao, title }: IUpdateTask) {
-    const task = await prisma.task.update({
+    const task = await prisma.task.findFirst({
+      where: {
+        id,
+      },
+    });
+
+    if (!task) {
+      throw new Error("Task not found");
+    }
+
+    const result = await prisma.task.update({
       where: { id },
       data: {
         title,
@@ -20,7 +30,7 @@ class UpdateTaskUseCase {
       },
     });
 
-    return task;
+    return result;
   }
 }
 
