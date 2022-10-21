@@ -2,8 +2,8 @@ import { prisma } from "../../../../database/prismaClient";
 interface ICreateTesk {
   title: string;
   description: string;
-  date: string;
-  duracao: string;
+  date: Date;
+  duracao: number;
 }
 
 class CreateTaskUseCase {
