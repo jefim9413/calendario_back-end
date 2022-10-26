@@ -1,0 +1,3 @@
+class FindByOneTaskUseCase {}
+
+export { FindByOneTaskUseCase };
